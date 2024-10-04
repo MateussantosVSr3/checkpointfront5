@@ -1,0 +1,133 @@
+section {
+    .center{
+        margin-top: 100px;
+        color: $white-normal;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+}
+
+em {
+    color: $red-dark;
+}
+
+.carousel-control-next {
+    margin: 0 3em;
+}
+
+i.fa-arrow-right,
+i.fa-arrow-left {
+  background: none;
+  border: 2px solid $red-dark;
+  color: $red-dark;
+  padding: 10px;
+  border-radius: 100%;
+  transition: background .6s ease;
+}
+
+i.fa-arrow-right:hover,
+i.fa-arrow-left:hover {
+    background: $red-light;
+    color: $white-normal;
+}
+
+
+.carousel-indicators {
+    justify-content: flex-start;
+   transform: translate(-40px, 50px);
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 2px solid $red-dark;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    background-color:  $red-light;
+}
+
+
+.control-btn {
+    position: absolute;
+    top: 8px;
+    right: 10em;
+}
+.carousel-control-next, 
+.carousel-control-prev {
+    top: 1em;
+    left: 3em;
+}
+
+.testimonial-text {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 20px; 
+}
+
+.wow {
+    position: relative;
+    grid-column: span 2;
+}
+
+.carousel-landmark {
+    grid-column: span 3;
+}
+
+@media screen and (max-width: 576px) {
+    .testimonial-text {
+        margin-top: 50px;
+    row-gap: 50px;
+    
+}
+    .wow {
+    grid-column: span 5;
+}
+
+.carousel-landmark {  
+    grid-column: span 5;
+}
+}
+
+.button-notclick {
+    color: $red-normal !important;
+}
+
+.button-testimonial {
+    background-color: $red-normal !important;
+    border-color: $red-dark;
+}
+
+.button-testimonial:hover {
+    border-color: $red-light !important;
+    color: $white-light;
+}
+
+.quote-color::before {
+    color: $red-normal;
+}
+
+.border-primary {
+    border-color: $red-normal !important;
+}
+
+.ps-3 {
+    h5 {
+        color: $white-dark;  
+    }
+
+    span {
+        color: $white-dark;
+    }
+}
+
+.mb-4 {
+    color: $white-dark;
+}
+
+.textimal-text {
+    color: $white-light;
+}
