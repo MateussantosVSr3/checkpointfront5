@@ -241,6 +241,17 @@ i {
     margin-bottom: 30px;
   }
 }
+.benefit {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.benefit i {
+  margin-right: 10px;
+  font-size: 30px;
+  color: #d94140;
+}
+
 section .center {
   margin-top: 100px;
   color: #fff;
